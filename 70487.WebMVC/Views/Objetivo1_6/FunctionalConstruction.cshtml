@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "FunctionalConstruction";
+}
+
+<h2>FunctionalConstruction</h2>
+
+XML: 
+<p>
+    <pre>
+        XElement contatos =
+                new XElement("Contatos",
+                    new XElement("Contato",
+                        new XElement("Nome", "Nome Numero 1"),
+                        new XElement("Telefone", "(11) 1111-1111"),
+                        new XElement("Endereco",
+                            new XElement("Rua", "Rua do Nome 1"),
+                            new XElement("Cidade", "Cidade 1"),
+                            new XElement("Estado", "Estado 1"),
+                            new XElement("CEP", "11111-111")
+                        )
+                    )
+                );
+    </pre>
+</p>
+<p>
+    @ViewBag.functionalResult.ToString()
+</p>

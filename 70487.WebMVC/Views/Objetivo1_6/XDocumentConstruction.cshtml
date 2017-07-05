@@ -1,0 +1,48 @@
+﻿
+@{
+    ViewBag.Title = "XDocumentConstruction";
+}
+
+<h2>XDocumentConstruction</h2>
+
+XML
+<pre>
+    XDocument doc = new XDocument(
+                new XDeclaration("1.0", "utf-8", "yes"),
+                new XComment("XML criado através de estruturas XDocument"),
+                new XElement("Contatos",
+                    new XElement("Contato",
+                        new XAttribute("tipo", "pessoal"),
+                        new XElement("Nome", "Contato Pessoal 1"),
+                        new XElement("Telefone", "(11) 1111-1111")
+                    ),
+                    new XElement("Contato",
+                        new XAttribute("tipo", "pessoal"),
+                        new XElement("Nome", "Contato Pessoal 2"),
+                        new XElement("Telefone", "(11) 2222-2222")
+                    ),
+                    new XElement("Contato",
+                        new XAttribute("tipo", "comercial"),
+                        new XElement("Nome", "Contato Comercial 1"),
+                        new XElement("Telefone", "(11) 91111-1111")
+                    ),
+                    new XElement("Contato",
+                        new XAttribute("tipo", "pessoal"),
+                        new XElement("Nome", "Contato Pessoal 3"),
+                        new XElement("Telefone", "(11) 3333-3333")
+                    ),
+                    new XElement("Contato",
+                        new XAttribute("tipo", "comercial"),
+                        new XElement("Nome", "Contato Comercial 2"),
+                        new XElement("Telefone", "(11) 92222-2222")
+                    )
+                )
+            );
+</pre>
+
+<p>
+    Resultado:
+</p>
+<p>
+    @ViewBag.xdocument
+</p>

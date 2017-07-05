@@ -145,6 +145,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\Objetivo1_2Controller.cs" />
     <Compile Include="Controllers\Objetivo1_3Controller.cs" />
+    <Compile Include="Controllers\Objetivo1_6Controller.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -192,6 +193,10 @@
     <Content Include="Views\Objetivo1_2\ObjectCache.cshtml" />
     <Content Include="Views\Objetivo1_2\Cache.cshtml" />
     <Content Include="Views\Objetivo1_3\Index.cshtml" />
+    <Content Include="Views\Objetivo1_6\FunctionalConstruction.cshtml" />
+    <Content Include="Views\Objetivo1_6\Index.cshtml" />
+    <Content Include="Views\Objetivo1_6\XDocumentConstruction.cshtml" />
+    <Content Include="Views\Objetivo1_6\LinqToXML.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
